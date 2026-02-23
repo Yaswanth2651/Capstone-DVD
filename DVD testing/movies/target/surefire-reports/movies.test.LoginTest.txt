@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: movies.test.LoginTest
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 27.41 s - in movies.test.LoginTest

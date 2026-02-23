@@ -1,0 +1,1 @@
+{"uuid":"7cbfe543-0b04-4c27-8d42-40154db9351b","name":"movies.test.CartTest.setUp","children":["5c66a750-6f92-401f-9e96-c214b824be61"],"description":"","befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1771576752257,"stop":1771576753880}],"afters":[],"start":1771576752257,"stop":1771576753880}
