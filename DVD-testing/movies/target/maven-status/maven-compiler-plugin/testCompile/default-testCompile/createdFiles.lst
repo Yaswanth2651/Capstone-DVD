@@ -1,0 +1,8 @@
+movies\test\CatalogTests.class
+movies\test\CheckoutTest.class
+movies\test\AppTest.class
+movies\test\LoginTest.class
+movies\test\RegisterTest.class
+movies\test\CartTest.class
+movies\test\PaymentPageTest.class
+movies\test\HomePageTest.class

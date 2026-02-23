@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-02-23T10:14:11 IST" name="Surefire suite" finished-at="2026-02-23T10:14:37 IST" duration-ms="26244">
+    <groups>
+    </groups>
+    <test started-at="2026-02-23T10:14:11 IST" name="Surefire test" finished-at="2026-02-23T10:14:37 IST" duration-ms="26244">
+      <class name="movies.test.LoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:movies.test.LoginTest@1e04fa0a]" started-at="2026-02-23T10:14:11 IST" name="setUp" finished-at="2026-02-23T10:14:14 IST" duration-ms="3378" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testDemoUserFunctionality()[pri:0, instance:movies.test.LoginTest@1e04fa0a]" started-at="2026-02-23T10:14:14 IST" name="testDemoUserFunctionality" finished-at="2026-02-23T10:14:15 IST" duration-ms="304" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDemoUserFunctionality -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:movies.test.LoginTest@1e04fa0a]" started-at="2026-02-23T10:14:15 IST" name="tearDown" finished-at="2026-02-23T10:14:15 IST" duration-ms="472" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:movies.test.LoginTest@1e04fa0a]" started-at="2026-02-23T10:14:15 IST" name="setUp" finished-at="2026-02-23T10:14:17 IST" duration-ms="1831" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testEmailAutocompleteAttribute()[pri:0, instance:movies.test.LoginTest@1e04fa0a]" started-at="2026-02-23T10:14:17 IST" name="testEmailAutocompleteAttribute" finished-at="2026-02-23T10:14:17 IST" duration-ms="58" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEmailAutocompleteAttribute -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:movies.test.LoginTest@1e04fa0a]" started-at="2026-02-23T10:14:17 IST" name="tearDown" finished-at="2026-02-23T10:14:18 IST" duration-ms="378" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:movies.test.LoginTest@1e04fa0a]" started-at="2026-02-23T10:14:18 IST" name="setUp" finished-at="2026-02-23T10:14:19 IST" duration-ms="1684" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testEmptyLoginAttempt()[pri:0, instance:movies.test.LoginTest@1e04fa0a]" started-at="2026-02-23T10:14:19 IST" name="testEmptyLoginAttempt" finished-at="2026-02-23T10:14:20 IST" duration-ms="229" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEmptyLoginAttempt -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:movies.test.LoginTest@1e04fa0a]" started-at="2026-02-23T10:14:20 IST" name="tearDown" finished-at="2026-02-23T10:14:20 IST" duration-ms="317" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:movies.test.LoginTest@1e04fa0a]" started-at="2026-02-23T10:14:20 IST" name="setUp" finished-at="2026-02-23T10:14:22 IST" duration-ms="1863" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testEnterKeySubmission()[pri:0, instance:movies.test.LoginTest@1e04fa0a]" started-at="2026-02-23T10:14:22 IST" name="testEnterKeySubmission" finished-at="2026-02-23T10:14:22 IST" duration-ms="313" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEnterKeySubmission -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:movies.test.LoginTest@1e04fa0a]" started-at="2026-02-23T10:14:22 IST" name="tearDown" finished-at="2026-02-23T10:14:23 IST" duration-ms="538" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:movies.test.LoginTest@1e04fa0a]" started-at="2026-02-23T10:14:23 IST" name="setUp" finished-at="2026-02-23T10:14:24 IST" duration-ms="1616" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testErrorMessageVisibility()[pri:0, instance:movies.test.LoginTest@1e04fa0a]" started-at="2026-02-23T10:14:24 IST" name="testErrorMessageVisibility" finished-at="2026-02-23T10:14:25 IST" duration-ms="516" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testErrorMessageVisibility -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:movies.test.LoginTest@1e04fa0a]" started-at="2026-02-23T10:14:25 IST" name="tearDown" finished-at="2026-02-23T10:14:25 IST" duration-ms="323" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:movies.test.LoginTest@1e04fa0a]" started-at="2026-02-23T10:14:25 IST" name="setUp" finished-at="2026-02-23T10:14:27 IST" duration-ms="1751" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testInputPersistenceBeforeSubmit()[pri:0, instance:movies.test.LoginTest@1e04fa0a]" started-at="2026-02-23T10:14:27 IST" name="testInputPersistenceBeforeSubmit" finished-at="2026-02-23T10:14:28 IST" duration-ms="531" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInputPersistenceBeforeSubmit -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:movies.test.LoginTest@1e04fa0a]" started-at="2026-02-23T10:14:28 IST" name="tearDown" finished-at="2026-02-23T10:14:28 IST" duration-ms="403" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:movies.test.LoginTest@1e04fa0a]" started-at="2026-02-23T10:14:28 IST" name="setUp" finished-at="2026-02-23T10:14:30 IST" duration-ms="1619" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginButtonState()[pri:0, instance:movies.test.LoginTest@1e04fa0a]" started-at="2026-02-23T10:14:30 IST" name="testLoginButtonState" finished-at="2026-02-23T10:14:30 IST" duration-ms="78" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginButtonState -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:movies.test.LoginTest@1e04fa0a]" started-at="2026-02-23T10:14:30 IST" name="tearDown" finished-at="2026-02-23T10:14:30 IST" duration-ms="328" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:movies.test.LoginTest@1e04fa0a]" started-at="2026-02-23T10:14:30 IST" name="setUp" finished-at="2026-02-23T10:14:32 IST" duration-ms="1981" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testNavigationToRegister()[pri:0, instance:movies.test.LoginTest@1e04fa0a]" started-at="2026-02-23T10:14:32 IST" name="testNavigationToRegister" finished-at="2026-02-23T10:14:32 IST" duration-ms="205" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNavigationToRegister -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:movies.test.LoginTest@1e04fa0a]" started-at="2026-02-23T10:14:32 IST" name="tearDown" finished-at="2026-02-23T10:14:33 IST" duration-ms="289" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:movies.test.LoginTest@1e04fa0a]" started-at="2026-02-23T10:14:33 IST" name="setUp" finished-at="2026-02-23T10:14:34 IST" duration-ms="1716" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testPasswordMasking()[pri:0, instance:movies.test.LoginTest@1e04fa0a]" started-at="2026-02-23T10:14:34 IST" name="testPasswordMasking" finished-at="2026-02-23T10:14:35 IST" duration-ms="55" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPasswordMasking -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:movies.test.LoginTest@1e04fa0a]" started-at="2026-02-23T10:14:35 IST" name="tearDown" finished-at="2026-02-23T10:14:35 IST" duration-ms="401" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:movies.test.LoginTest@1e04fa0a]" started-at="2026-02-23T10:14:35 IST" name="setUp" finished-at="2026-02-23T10:14:37 IST" duration-ms="1657" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testPlaceholderText()[pri:0, instance:movies.test.LoginTest@1e04fa0a]" started-at="2026-02-23T10:14:37 IST" name="testPlaceholderText" finished-at="2026-02-23T10:14:37 IST" duration-ms="88" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPlaceholderText -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:movies.test.LoginTest@1e04fa0a]" started-at="2026-02-23T10:14:37 IST" name="tearDown" finished-at="2026-02-23T10:14:37 IST" duration-ms="317" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- movies.test.LoginTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
