@@ -42,7 +42,7 @@ jobs:
           done
 
       - name: Run TestNG suite (all 60 tests) + write Allure results
-        working-directory: DVD-testing/movies
+        working-directory: DVD-testing/movies/pom.xml
         env:
           BASE_URL: http://127.0.0.1:5713/
         run: mvn -B -ntp clean test -Dheadless=true
