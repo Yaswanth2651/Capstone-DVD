@@ -48,7 +48,7 @@ jobs:
         run: mvn -B -ntp clean test -Dheadless=true
 
       - name: Generate Allure HTML report
-        working-directory: demo
+        working-directory: DVD-testing
         run: mvn -B -ntp allure:report
 
       - name: Upload Pages artifact (Allure HTML)
