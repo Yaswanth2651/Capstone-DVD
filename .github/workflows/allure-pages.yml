@@ -18,10 +18,13 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
+      # Checkout repository
       - name: Checkout
         uses: actions/checkout@v4
 
+      # Setup Java 17
       - name: Setup Java
         uses: actions/setup-java@v4
         with:
@@ -29,6 +32,7 @@ jobs:
           java-version: "17"
           cache: maven
 
+      # Start local static web server
       - name: Start local web server (static HTML app)
         shell: bash
         run: |
@@ -41,33 +45,39 @@ jobs:
             sleep 1
           done
 
-      - name: Run TestNG suite (all 60 tests) + write Allure results
-        working-directory: DVD-testing/movies/pom.xml
+      # Run TestNG suite + generate Allure results
+      - name: Run TestNG suite (all tests) + write Allure results
+        working-directory: DVD-testing/movies
         env:
           BASE_URL: http://127.0.0.1:5713/
         run: mvn -B -ntp clean test -Dheadless=true
 
+      # Generate Allure HTML report
       - name: Generate Allure HTML report
-        working-directory: DVD-testing/movies   
+        working-directory: DVD-testing/movies
         run: mvn -B -ntp allure:report
 
+      # Upload Allure HTML report for GitHub Pages
       - name: Upload Pages artifact (Allure HTML)
         uses: actions/upload-pages-artifact@v3
         with:
-          path: DVD-testing/movies/src/test/java/movies/test
+          path: DVD-testing/movies/target/site/allure-maven-plugin
 
+      # Upload raw Allure results (for debugging if needed)
       - name: Upload raw Allure results (debug)
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: allure-results
-          path: DVD-testing/movies/allure-results
+          path: DVD-testing/movies/target/allure-results
+
   deploy:
     needs: build
     runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
