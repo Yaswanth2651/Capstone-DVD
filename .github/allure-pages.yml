@@ -1,0 +1,75 @@
+name: Allure Report (GitHub Pages)
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+          cache: maven
+
+      - name: Start local web server (static HTML app)
+        shell: bash
+        run: |
+          python3 -m http.server 3001 --bind 127.0.0.1 &
+          for i in {1..30}; do
+            if curl -fsS "http://127.0.0.1:3001/" >/dev/null; then
+              echo "Server is up"
+              break
+            fi
+            sleep 1
+          done
+
+      - name: Run TestNG suite (all 60 tests) + write Allure results
+        working-directory: demo
+        env:
+          BASE_URL: http://127.0.0.1:3001/
+        run: mvn -B -ntp clean test -Dheadless=true
+
+      - name: Generate Allure HTML report
+        working-directory: demo
+        run: mvn -B -ntp allure:report
+
+      - name: Upload Pages artifact (Allure HTML)
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: demo/target/site/allure-maven-plugin
+
+      - name: Upload raw Allure results (debug)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-results
+          path: demo/target/allure-results
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
