@@ -42,7 +42,7 @@ jobs:
           done
 
       - name: Run TestNG suite (all 60 tests) + write Allure results
-        working-directory: demo
+        working-directory: DVD-testing
         env:
           BASE_URL: http://127.0.0.1:3001/
         run: mvn -B -ntp clean test -Dheadless=true
