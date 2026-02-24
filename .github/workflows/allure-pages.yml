@@ -54,7 +54,7 @@ jobs:
       - name: Upload Pages artifact (Allure HTML)
         uses: actions/upload-pages-artifact@v3
         with:
-          path: DVD-testing/movies/src/test/java
+          path: DVD-testing/movies/src/test/java/movies/test
 
       - name: Upload raw Allure results (debug)
         if: always()
