@@ -42,13 +42,13 @@ jobs:
           done
 
       - name: Run TestNG suite (all 60 tests) + write Allure results
-        working-directory: DVD-testing
+        working-directory: DVD-testing/movies
         env:
           BASE_URL: http://127.0.0.1:5713/
         run: mvn -B -ntp clean test -Dheadless=true
 
       - name: Generate Allure HTML report
-        working-directory: DVD-testing
+        working-directory: DVD-testing/movies   
         run: mvn -B -ntp allure:report
 
       - name: Upload Pages artifact (Allure HTML)
