@@ -54,15 +54,14 @@ jobs:
       - name: Upload Pages artifact (Allure HTML)
         uses: actions/upload-pages-artifact@v3
         with:
-          path: demo/target/site/allure-maven-plugin
+          path: DVD-testing/movies/src/test/java
 
       - name: Upload raw Allure results (debug)
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: allure-results
-          path: demo/target/allure-results
-
+          name: allure-result
+          path: DVD-testing/movies/llure-result
   deploy:
     needs: build
     runs-on: ubuntu-latest
